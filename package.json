@@ -2,19 +2,27 @@
   "name": "enums-js",
   "version": "0.1.0",
   "description": "JavaScript library for enums",
-  "main": "src/main.js",
+  "main": "dist/enum.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.prod.js",
     "start": "webpack-dev-server --open --config ./webpack.config.dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
   },
   "author": "Kamil Trusiak",
   "license": "ISC",
-  "keywords": ["javascript", "enum"],
+  "keywords": [
+    "javascript",
+    "enum"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/kamil7x/enums-js.git"
   },
+  "bugs": "https://github.com/kamil7x/enums-js/issues",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
