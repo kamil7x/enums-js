@@ -2,7 +2,7 @@
   "name": "enums-js",
   "version": "0.2.0",
   "description": "JavaScript library for enums",
-  "main": "dist/enum.js",
+  "main": "dist/enums.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.prod.js",
     "start": "webpack-dev-server --open --config ./webpack.config.dev.js",
