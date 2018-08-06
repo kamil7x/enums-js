@@ -1,6 +1,6 @@
 {
   "name": "enums-js",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "JavaScript library for enums",
   "main": "dist/enum.js",
   "scripts": {
