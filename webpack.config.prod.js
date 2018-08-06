@@ -5,8 +5,9 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'enum.js',
-    library: 'enumJS',
+    filename: 'enums.js',
+    library: 'enumsJS',
+    libraryTarget: 'umd',
   },
   module: {
     rules: [
