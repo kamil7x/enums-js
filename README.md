@@ -1,5 +1,12 @@
 # JavaScript library for enums
 
+Simple JS library for enums. https://www.npmjs.com/package/enums-js
+
+### Installation
+```
+npm install enums-js
+```
+
 ### Usage:
 Pass list of entries to constructor.
 Entry can be simple string. In this case, this string is used as enum key, and value is set automatically, similar to TypeScript enums. 
@@ -20,7 +27,8 @@ You can also use a key-value pair as a value. Just define it as an array. If onl
 const Color = new Enum(['red', 'color-red'], ['green', 'color-green'], ['blue']);
 
 console.log(Color.keys()); // ['RED', 'GREEN', 'BLUE']
-console.log(Color.RED.value); // red
+console.log(Color.RED.value); // color-red
+console.log(Color.BLUE.value); // blue
 console.log(Color.RED === Color.GREEN); // false
 console.log(Color.GREEN.value === 'green'); // false
 console.log(Color.GREEN.value === 'color-green'); // true
